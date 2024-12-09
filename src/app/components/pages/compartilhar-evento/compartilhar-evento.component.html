@@ -1,0 +1,33 @@
+<div class="containerCompartilhar">
+    <h2>Compartilhe o que há de bom em Brasília!</h2>
+
+    <form>
+        <div>
+            <label>Nome do evento</label>
+            <input 
+                type="text" placeholder="Digite o nome do evento" [(ngModel)]="evento.nome" name="nome"
+            >
+        </div>
+        <div>
+            <label>Descrição do evento</label>
+            <textarea 
+                placeholder="O que vai ter de bom no evento" [(ngModel)]="evento.descricao" name="descricao"
+            ></textarea>
+        </div>
+        <div>
+            <label>Descrição do evento</label>
+            <input type="date" name="data" [(ngModel)]="evento.data">
+        </div>
+        <div>
+            <label>Capa do evento</label>
+            <input 
+                type="file" (change)="carregarImagem($event)"
+            >
+        </div>
+        <div class="previaImagem">
+            <label>Prévia da capa</label>
+            <img [src]="evento.capa" *ngIf="evento.capa">
+        </div>
+        <button type="button" (click)="salvarEvento()">Compartilhar!</button>
+    </form>
+</div>

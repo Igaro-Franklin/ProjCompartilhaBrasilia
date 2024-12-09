@@ -1,0 +1,14 @@
+.containerSobre{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.sectionSobre h2{
+    font-size: 50px;
+    text-shadow: 6px 1px 1px #00415a91;
+}
+
+p{
+    font-size: 20px;
+}
