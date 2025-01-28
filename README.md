@@ -1,59 +1,58 @@
-# CompartilhaBrasilia
+![Compartilha Brasília](public/CompartilhaBrasilia.png)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.0.
+# Compartilha Brasília
 
-## Development server
+O Compartilha Brasília é uma plataforma criada para conectar pessoas aos eventos e experiências incríveis que acontecem na nossa capital. Sabemos que Brasília é repleta de cultura, música, arte e momentos únicos que merecem ser compartilhados. Nosso objetivo é proporcionar um espaço onde você pode descobrir e divulgar o que há de melhor em Brasília!
 
-To start a local development server, run:
+## Funcionalidades
 
-```bash
-ng serve
-```
+- Descobrir eventos em Brasília
+- Compartilhar eventos
+- Visualizar detalhes dos eventos
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Estrutura do Projeto
 
-## Code scaffolding
+- `src/app/components/pages/sobre/sobre.component.html`: Página sobre o Compartilha Brasília.
+- `src/app/components/pages/home/home.component.html`: Página inicial com a lista de eventos.
+- `src/app/components/pages/compartilhar-evento/compartilhar-evento.component.html`: Página para compartilhar novos eventos.
+- `src/app/app.component.html`: Componente principal que inclui o cabeçalho e rodapé.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Scripts Disponíveis
 
-```bash
-ng generate component component-name
-```
+No diretório do projeto, você pode executar:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### `ng serve`
 
-```bash
-ng generate --help
-```
+Roda a aplicação em modo de desenvolvimento.\
+Abra [http://localhost:4200](http://localhost:4200) para ver no navegador.
 
-## Building
+### `ng build`
 
-To build the project run:
+Compila a aplicação para produção na pasta `dist/`.
 
-```bash
-ng build
-```
+### `ng test`
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Roda os testes unitários via [Karma](https://karma-runner.github.io).
 
-## Running unit tests
+### `serve:ssr:compartilhaBrasilia`
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Serve a aplicação usando server-side rendering com Express.
 
-```bash
-ng test
-```
+## Dependências
 
-## Running end-to-end tests
+- Angular
+- Express
+- RxJS
+- Zone.js
 
-For end-to-end (e2e) testing, run:
+## Como Contribuir
 
-```bash
-ng e2e
-```
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`).
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`).
+4. Faça um push para a branch (`git push origin feature/AmazingFeature`).
+5. Abra um Pull Request.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Contato
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Se tiver dúvidas, sugestões ou feedback, entre em contato conosco!
